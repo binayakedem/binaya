@@ -1,11 +1,11 @@
 import './style.css'
 import React from 'react'
-
+import logo from '../assets/icon.png'
 const Navbar = () => {
   return (
     <nav className="navbar">
         <div className="logo">
-        <img src="" alt="logo" className="navImg" />
+        <img src={logo} alt="logo" className="navImg" />
 
         </div>
         <div className="menus">
