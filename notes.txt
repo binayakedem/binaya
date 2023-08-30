@@ -1,0 +1,5 @@
+#0B0C10 black(Navbar and footer)
+#1F2833 gray (background whole)
+#66FCF1 (Headings) light blue
+#45A29E (blue dark border)
+#ffffff (white for paragraph)

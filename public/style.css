@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+    background: #1F2833;
+    color:#ffffff;
+    height: 100%;
+    width: 100%;
+
+    
+}
+
+h1,h2,h3{
+  color: #66FCF1;  
+}
+p{
+    color: #ffffff;
+}

@@ -1,0 +1,13 @@
+/* 
+this is all about the navbar section style sheet 
+*/
+.navbar{
+    margin:0;
+    background: #0B0C10;
+    color: #ffffff;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
