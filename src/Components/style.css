@@ -1,13 +1,727 @@
-/* 
-this is all about the navbar section style sheet 
-*/
-.navbar{
-    margin:0;
-    background: #0B0C10;
-    color: #ffffff;
+ /* the navbar start hehe */
+ .main-nav{
+    font-size: 1.6rem;
     width: 100%;
     height: 5rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+    background: #0B0C10;
+    box-shadow:0px 10px 100px #66FCF1;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    color: #66FCF1;
+}
+.name{
+    
+    display: grid;
+    justify-content: left;
     align-items: center;
+    grid-column: 2/3;
+}
+.menus{
+    grid-column: 3/4;
+}
+.menus ul{
+    height: 5rem;
+    text-transform: capitalize;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.mode{
+    grid-column: 4/5;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+.btn{
+    background: #ffffff;
+    padding: 0.4rem;
+    margin: 0 0.8rem;
+    border: #66FCF1 0.1rem solid;
+    box-shadow: 0.1rem 0.1rem 10px #66FCF1;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    /* color: #66FCF1; */
+}
+.btn:hover{
+    cursor: pointer;
+    transition-duration: 1s;
+    background: #0B0C10;
+    color: #66FCF1;
+}
+.hamburger-menu{
+    display: none;
+}
+
+
+@media(max-width:50rem){
+    .main-nav{
+        
+        height: fit-content;
+        display: block;
+    }
+    .menu-icon{
+        color: #ffffff;
+        padding: 0.5rem;
+        margin: 0 0.5rem;
+    }
+    .menus{
+        display: none;
+    }
+    .name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #0B0C10;
+       padding: 1.4rem;
+       font-size: 1.2rem;
+    }
+    .name1:hover{
+        cursor: pointer;
+    }
+    .btn{
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+  .mobile-menu{
+    padding-top: 2rem;
+    width: 30%;
+    height: 20rem;
+    
+z-index: 99;
+background: #dadbdd;
+color: black;
+box-shadow: rgba(9, 154, 238, 0.25) 0px 5px 00px -20px, rgba(239, 8, 8, 0.912) 0px 30px 60px -30px;
+
+  }
+   .mobile-menu ul{
+    
+    display: block;
+    padding: 2rem 2.4rem 0rem 2.4rem;
+   justify-content: right;
+   align-items: center;
+   }
+   .mobile-menu ul li{
+    padding: 0.7rem;
+   }
+   
+}
+
+/*  the navbar is about to end hehe */
+
+/* now footer start hehe */
+.footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+    background: #0B0C10;
+    
+    box-shadow:10px 0px 100px #66FCF1;
+    bottom: 0;
+}
+.connect-me{
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 50rem;
+    grid-column: 2/3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.social-links{
+    margin: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    grid-column: 2/3;
+    width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.copyright{
+    margin: 1rem;
+    padding: 0.5rem;
+    grid-column: 2/3;
+    width: 50rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+
+}
+@media(max-width:50rem){
+    .footer{
+        display: block;
+        justify-self: center;
+        align-items: center;
+        font-size: 1.4rem;
+        margin: 0;
+        
+    }
+    .social-links{
+        display: flex;
+        padding: 0.25rem;
+        width: 37.5rem;
+    }
+    .connect-me{
+        width: 37.5rem;
+        padding: 0.5rem;
+        
+    }
+    .copyright{
+        width: 37.5rem;
+    
+        
+    }
+    @media(max-width:39.2rem){
+        .social-links{
+            display: flex;
+            flex-wrap: wrap;
+            width: 30rem;
+        }
+       .connect-me{
+        width: 30rem;
+
+       }
+       .copyright{
+        width: 30rem;
+
+       }
+    }
+}
+
+
+/* intro part styling start here */
+
+.intro-section{
+display: grid;
+grid-template-columns: 10rem 1fr 1fr 10rem;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+height: 100vh;
+
+
+}
+.left-part{
+    grid-column: 2/3;
+    display: grid;
+    justify-content: left top;
+    align-items: center;
+   
+}
+
+.right-part{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+
+
+}
+.intro-img{
+    object-fit: cover;
+   width: 50rem;
+   
+
+
+}
+.right-part img{
+    object-fit: cover;
+    overflow: hidden;
+   z-index: -9;
+}
+
+.intro-name{
+    margin: 1rem 0 ;
+    text-shadow: 0.2rem -0.2rem 0.1rem #ffffff;
+    -webkit-text-stroke:  0.1rem #000000 ;
+    font-size: 4.4rem;
+    font-weight: bold;
+
+}
+.intro-name h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.intro-para{
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+.cv-download{
+    display: grid;
+    justify-content: left;
+    align-items: center;
+   
+}
+.cv-btn{
+    width: 8rem;
+    background: #ffffff;
+    padding: 0.4rem;
+    margin: 3rem 0.8rem;
+    border: #66FCF1 0.1rem solid;
+    box-shadow: 0.1rem 0.1rem 10px #66FCF1;
+    border-radius: 2rem;
+    font-weight:bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+}
+
+.cv-btn:hover{
+    transition-duration: 1s;
+    background: #0B0C10;
+    color: #66FCF1;
+
+}
+@media(max-width:65.6rem){
+    .intro-img{
+        width: 40rem;
+    }
+}
+@media(max-width:56rem){
+    .intro-section{
+        margin-top: 0.5rem;
+    }
+    .intro-img{
+        width: 30rem;
+    }
+    .intro-name{
+        font-size: 2.4rem;
+    }
+}
+@media(max-width:50rem){
+    .intro-section{
+        margin-top: 0.5rem;
+    }
+    .intro-img{
+        width: 20rem;
+    }
+    .intro-name{
+        font-size: 2.4rem;
+    }
+}
+/* social icons in intro section */
+.intro-socials{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 3.2rem;
+    margin-bottom: 1.6rem;
+    margin-left: 0;
+
+}
+.intro-icon{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: #0B0C10;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    border: #66FCF1 0.1rem solid;
+    box-shadow: 0.1rem 0.1rem 1rem #66FCF1;
+}
+.intro-icon:hover{
+    transition-duration: 2s ease-out;
+    border: #66FCF1 0.2rem solid;
+    box-shadow: 0.3rem 0.3rem 3rem #66FCF1;
+
+}
+
+/* project start styling */
+.project{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #000000;
+}
+.project-titles{
+    grid-column: 1/2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0;
+    font-size: 1.8rem;
+    font-weight:bold;
+    text-shadow: #fa0202 1rem;
+    
+}
+.project-title{
+    text-shadow:0.1rem 0.1rem 1rem #1b02fa ;
+}
+.project-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #000000;
+
+}
+.project-box:hover{
+    box-shadow: 0.5rem 0.5rem 1rem #66FCF1;
+}
+.project-box{
+width: 20rem;
+height: 28rem;
+border: solid 0.3rem #66FCF1;
+overflow: hidden;
+box-shadow: 0.2rem 0.3rem 2rem #66FCF1;
+position: relative;
+margin: 2rem;
+}
+.overlay{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    /* Linear gradient from top to bottom with transparent color */
+background: linear-gradient(to bottom, rgba(8, 8, 8, 0.8), rgba(19, 60, 60, 0.8), rgb(8, 8, 8));
+    justify-content: center;
+    align-items: center;
+
+
+}
+.card-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card-title{
+    z-index: 23;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+   
+   
+  
+}
+.card-para{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 2rem;
+    color:#ffffff;
+    font-size: 1.6rem;
+}
+.card-link{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin: 0 2rem;
+    width: 8rem;
+    background: #000000;
+    color: #66FCF1;
+    border: #66FCF1 0.1rem solid;
+    box-shadow: 0.2rem 0.2rem 1rem #66FCF1;
+    border-radius: 4rem;
+}
+.card-link:hover{
+    box-shadow: 0.4rem 0.4rem 0.5rem #66FCF1;
+    color: #ffffff;
+    border: #66FCF1 0.3rem solid;
+}
+.card-link a{
+    color: #66FCF1;
+    font-size: 1.6rem;
+    
+    
+}
+.project-box:hover .overlay{
+    transition-duration: 2s;
+    height: 100%;
+    border: #66FCF1 0.2rem solid;
+}
+
+/* skill start  */
+
+.skill{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #000000 ;
+}.skill-heading{
+    grid-column: 1/2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 6rem 0;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow:0.1rem 0.1rem 1rem #1b02fa ;
+
+}
+.skill-level{
+    margin: 1rem;
+    padding: 1rem;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.react{
+    height: 30rem;
+    width:3.9rem;
+   border: #66FCF1 0.2rem solid;
+   border-top: none;
+   box-shadow: 0.3rem 0.3rem 0.5rem #66FCF1;
+   background: #000000;
+   overflow: hidden;
+   display: block;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin: 1rem 3rem;
+}
+.inner-react{
+    width: 100%;
+    height: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 2, 2,1) ,  rgba(216, 65, 27,1) ,  rgb(223, 247, 10) , rgba(36, 249, 8,1)  );
+    border: #000000 solid 0.2rem;
+    position: absolute;
+}
+.percent{
+
+ position: absolute;
+ color: #ffffff;
+}
+.skill-in{
+    height: 100%;
+    color: #66FCF1;
+    font-size: 1.8rem;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.inner-wordpress{
+    width: 100%;
+    height: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 2, 2,1) ,  rgba(216, 65, 27,1) ,  rgb(223, 247, 10) , rgba(36, 249, 8,1)  );
+    border: #000000 solid 0.2rem;
+    position: absolute;
+}
+.inner-css{
+    width: 100%;
+    height: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-weight: bold;
+    background: linear-gradient(to bottom, rgba(255, 2, 2,1) ,  rgba(216, 65, 27,1) ,  rgb(223, 247, 10) , rgba(36, 249, 8,1)  );
+    border: #000000 solid 0.2rem;
+    position: absolute;  
+}
+.inner-html{
+    width: 100%;
+    height: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 2, 2,1) ,  rgba(216, 65, 27,1) ,  rgb(223, 247, 10) , rgba(36, 249, 8,1)  );
+    border: #000000 solid 0.2rem;
+    position: absolute;
+}
+.inner-javascript{
+    width: 100%;
+    height: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 2, 2,1) ,  rgba(216, 65, 27,1) ,  rgb(223, 247, 10) , rgba(36, 249, 8,1)  );
+    border: #000000 solid 0.2rem;
+    position: absolute;
+}
+.skill:hover .inner-react{
+    transition-duration: 7s;
+ height: 60%;
+ 
+
+}
+.skill:hover .inner-wordpress{
+    transition-duration: 4s;
+    height: 70%;  
+}
+.skill:hover .inner-css{
+    transition-duration: 5.5s;
+    height: 65%;  
+}
+.skill:hover .inner-html{
+    transition-duration: 6s;
+    height: 80%;  
+}
+.skill:hover .inner-javascript{
+    transition-duration: 6s;
+    height: 60%;  
+}
+.inner-react:hover{
+    box-shadow: 2rem 3rem 3rem #f92c03;
+}
+
+/* start about section */
+
+.about{
+    height: 70rem;
+    width: 100vw;
+    background: #0B0C10;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.about-heading{
+    grid-column: 1/2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow:0.1rem 0.1rem 1rem #1b02fa ;
+
+
+}
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.about-left{
+display: grid;
+grid-column: 1/2;
+justify-content: center;
+align-items: center;
+height: 50rem ;
+width: 50rem;
+clip-path: polygon(33% 0%, 66% 0%, 100% 25%, 100% 75%, 67% 100%, 34% 100%, 0% 75% ,0% 25%);
+margin: 2rem;
+border: 0.5rem solid #000000;
+background: #66FCF1;
+
+}
+.about-img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.about-img{
+    z-index: 99;
+}
+.about-imgs{
+  
+    border: 0.5rem solid #000000;
+}
+.about-right{
+
+padding: 4rem;
+}
+
+.about-para{
+    font-size: 1.8rem;
+    word-spacing: 0.5rem;
+ 
+}
+
+/*  contact form start */
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.contact-heading{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-desc{
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+padding: 1rem;
+font-size: medium;
+font-weight: 1.6rem;
+}
+.contact-form{
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background: rgba(102, 252, 241,0.5);
+    box-shadow: 0.6rem 0.6rem 1rem rgba(102, 252, 241,1);
+    
+}
+.contact-name, .email, .msg{
+    font-size: medium;
+    width: 98.5%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    background: #0B0C10;
+  
+  
+}
+.submit-btn{
+   margin-left: 50%;
+   cursor: pointer;
+   border-radius: 1rem;
+   height: 3.5rem;
+   width: 8rem;
+   background: #ffffff;
+   color: #000000;
+   font-size: medium;
+   font-weight: 300;
+   box-shadow: 0.5rem 0.5rem 1rem #000000;
+}
+.submit-btn:hover{
+    transition-duration: 1s;
+    color: #66FCF1;
+    background: #000000;
+    border: 0.2rem solid #66FCF1;
+    box-shadow: 0.8rem 0.8rem 2rem #66FCF1;
 }

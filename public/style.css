@@ -1,17 +1,23 @@
 *{
   margin: 0;
   padding: 0;
-    background: #1F2833;
-    color:#ffffff;
-    height: 100%;
-    width: 100%;
-
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+font-family: "Poppins" ,sans-serif;
     
 }
-
-h1,h2,h3{
-  color: #66FCF1;  
+html{
+  font-size: 62.5%;
 }
-p{
-    color: #ffffff;
+li{
+  list-style: none;
+}
+body{
+  background:rgb(30,30, 30);
+  color: #66FCF1;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  
 }
