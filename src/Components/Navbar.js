@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className='main-nav'>
       {/* this is the mainly contain the menu */}
       <div className="name">
-      <h2 className='name1'>Binaya</h2>
+      <h2 className='name1'><Link activeClass='active' to='intro-section' spy={true} smooth={true} offset={-100} duration={800} className='logo-name'>Binaya</Link></h2>
       <div className="hamburger-menu">
           <button className='menu-icon' onClick={()=>setShowIcons(!showIcons)}>
           <GiHamburgerMenu/>
@@ -20,13 +20,13 @@ const Navbar = () => {
       </div>
       <div className={showIcons?"menus":"mobile-menu"}>
         {/* second menu links contains */}
-        <ul>
-          <li><Link className='list'>Home</Link></li>
-          <li><Link className='list'>Projects</Link></li>
-          <li><Link className='list'>Skills</Link></li>
-          <li><Link className='list'>About</Link></li>
-          <li><Link className='list'>Contact</Link></li>
-        </ul>
+        
+          <Link activeClass='active' to='intro-section' spy={true} smooth={true} offset={-100} duration={800} className='list'>Home</Link>
+          <Link activeClass='active' to='project' spy={true} smooth={true} offset={-100} duration={800}  className='list'>Projects</Link>
+         <Link activeClass='active' to='skill' spy={true} smooth={true} offset={-100} duration={800} className='list'>Skills</Link>
+          <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={800} className='list'>About</Link>
+          <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={800} className='list'>Contact</Link>
+       
 
       </div>
       <div className="mode">

@@ -2,10 +2,10 @@ import './style.css'
 import React from 'react'
 import {BsFacebook,BsGithub,BsInstagram, BsLinkedin, BsYoutube} from 'react-icons/bs'
 import {CgWebsite} from 'react-icons/cg'
-import IntroImg from '../assets/person.png'
+import IntroImg from '../assets/profile.png'
 const Intro = () => {
   return (
-    <section className='intro-section'>
+    <section id='intro-section'>
       <div className="left-part">
         <h1 className="intro-name">
           Hello, its me <br></br>Binaya <br />And I'm Frontend Developer
@@ -24,6 +24,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="right-part">
+      <div className="intro-rotating"></div>
       <img src={IntroImg} alt="introimage" className='intro-img'/>
       </div>
       
