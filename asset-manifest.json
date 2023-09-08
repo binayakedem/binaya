@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/binaya/static/css/main.af48714b.css",
+    "main.js": "/binaya/static/js/main.e07c7bb5.js",
+    "static/media/person.png": "/binaya/static/media/person.4d9e29d17e405c081aad.png",
+    "static/media/first.jpg": "/binaya/static/media/first.a50a475b0715f36162d3.jpg",
+    "static/media/third.jpg": "/binaya/static/media/third.49796f2858e1d6ca84b6.jpg",
+    "static/media/profile.png": "/binaya/static/media/profile.bebd1f3dd74b25b870ad.png",
+    "static/media/fourth.jpg": "/binaya/static/media/fourth.d38655d77d7e2114918b.jpg",
+    "static/media/second.jpg": "/binaya/static/media/second.83177325cfc77ab18bd5.jpg",
+    "index.html": "/binaya/index.html",
+    "main.af48714b.css.map": "/binaya/static/css/main.af48714b.css.map",
+    "main.e07c7bb5.js.map": "/binaya/static/js/main.e07c7bb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af48714b.css",
+    "static/js/main.e07c7bb5.js"
+  ]
+}
